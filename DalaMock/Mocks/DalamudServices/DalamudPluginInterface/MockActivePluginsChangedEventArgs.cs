@@ -20,4 +20,6 @@ public class MockActivePluginsChangedEventArgs : IActivePluginsChangedEventArgs
 
     /// <inheritdoc/>
     public IEnumerable<string> AffectedInternalNames { get; set; }
+
+    public IEnumerable<IActivePluginsChangedEventArgs.IAffectedPlugin> AffectedPlugins => throw new NotImplementedException();
 }

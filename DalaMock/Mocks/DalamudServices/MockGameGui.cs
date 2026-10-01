@@ -113,4 +113,19 @@ public class MockGameGui : IGameGui, IMockService
 
         this.hoveredItemId = itemId;
     }
+
+    public AtkUnitBasePtr GetAddonByName(ReadOnlySpan<byte> name, int index = 1)
+    {
+        throw new NotImplementedException();
+    }
+
+    public unsafe T* GetAddonByName<T>(ReadOnlySpan<byte> name, int index = 1) where T : unmanaged
+    {
+        throw new NotImplementedException();
+    }
+
+    public AgentInterfacePtr FindAgentInterface(ReadOnlySpan<byte> addonName)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -19,6 +19,8 @@ public class MockUnlockState : IUnlockState, IMockService
     /// <inheritdoc/>
     public bool IsTitleListLoaded { get; set; }
 
+    public bool IsXBMPetListLoaded => throw new NotImplementedException();
+
     public HashSet<uint> AchievementComplete = new();
     public HashSet<uint> ActionUnlocked = new();
     public HashSet<uint> AdventureComplete = new();
@@ -523,4 +525,9 @@ public class MockUnlockState : IUnlockState, IMockService
     private static uint Id<T>(T row)
         where T : struct, IExcelRow<T>
         => row.RowId;
+
+    public bool IsXBMPetUnlocked(XBMPet row)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -141,4 +141,29 @@ public class MockKeyState : IKeyState, IDisposable, IMockService
             this[VirtualKey.MENU] = true;
         }
     }
+
+    public bool IsExtendedVirtualKeyValid(int vkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool IsExtendedVirtualKeyValid(VirtualKey vkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool TryGetSeVirtualKey(int vkCode, out int seVkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool TryGetSeVirtualKey(VirtualKey vkCode, out int seVkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<VirtualKey> GetExtendedVirtualKeys()
+    {
+        throw new NotImplementedException();
+    }
 }

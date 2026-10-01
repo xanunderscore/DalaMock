@@ -102,4 +102,6 @@ public class MockPlayerState : IPlayerState, IMockService
     public bool IsReturner { get; set; }
 
     public string ServiceName => "Player State";
+
+    public bool IsAwayFromKeyboard => throw new NotImplementedException();
 }

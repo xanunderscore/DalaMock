@@ -186,6 +186,8 @@ public class MockDalamudPluginInterface : IDalamudPluginInterface, IDisposable
     /// <inheritdoc/>
     public FileInfo AssemblyLocation { get; }
 
+    public Guid WorkingPluginId => throw new NotImplementedException();
+
     /// <inheritdoc/>
     public ICallGateProvider<TRet> GetIpcProvider<TRet>(string name)
     {

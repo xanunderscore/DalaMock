@@ -1,4 +1,4 @@
-﻿namespace DalaMock.Core.Mocks.MockServices;
+namespace DalaMock.Core.Mocks.MockServices;
 
 public class NullKeyState : IKeyState, IMockService
 {
@@ -37,6 +37,31 @@ public class NullKeyState : IKeyState, IMockService
 
     public void ClearAll()
     {
+    }
+
+    public bool IsExtendedVirtualKeyValid(int vkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool IsExtendedVirtualKeyValid(VirtualKey vkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool TryGetSeVirtualKey(int vkCode, out int seVkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool TryGetSeVirtualKey(VirtualKey vkCode, out int seVkCode)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<VirtualKey> GetExtendedVirtualKeys()
+    {
+        throw new NotImplementedException();
     }
 
     public bool this[int vkCode]
